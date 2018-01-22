@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - webpack_with_dotnet_core</title>
+
+    <environment include="Development">
+    </environment>
+    <environment exclude="Development">
+    </environment>
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <environment include="Development">
+    </environment>
+    <environment exclude="Development">
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+    @Html.Partial("_GeneratedViews/app.cshtml")
+</body>
+</html>

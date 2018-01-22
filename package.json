@@ -1,0 +1,21 @@
+{
+  "name": "webpack-with-dotnet-core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jouni Kantola <jouni@kantola.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "razor-partial-views-webpack-plugin": "^1.1.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-cli": "^2.0.4"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^3.3.0",
+    "uglifyjs-webpack-plugin": "^1.1.6"
+  }
+}
