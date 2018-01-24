@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace webpack_with_dotnet_core
+namespace WebpackPromoteModernBrowsers
 {
     public class Program
     {

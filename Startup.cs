@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace webpack_with_dotnet_core
+namespace WebpackPromoteModernBrowsers
 {
     public class Startup
     {

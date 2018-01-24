@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace webpack_with_dotnet_core.Pages
+namespace WebpackPromoteModernBrowsers.Pages
 {
     public class ErrorModel : PageModel
     {
