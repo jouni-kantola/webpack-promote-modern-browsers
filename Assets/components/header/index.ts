@@ -1,5 +1,14 @@
-export class Header {
+import Component from "../component";
+import "./styles";
+
+export class Header extends Component {
+  text: string;
   constructor(text: string) {
-    console.log("header", text);
+    super("header");
+    this.text = text;
+  }
+
+  init() {
+    this.node.textContent = this.text;
   }
 }

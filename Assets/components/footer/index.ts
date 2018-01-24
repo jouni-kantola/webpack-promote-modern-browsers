@@ -1,7 +1,14 @@
+import Component from "../component";
 import "./styles";
 
-export class Footer {
+export class Footer extends Component {
+  text: string;
   constructor(text: string) {
-    console.log("footer", text);
+    super("footer");
+    this.text = text;
+  }
+
+  init() {
+    this.node.textContent = this.text;
   }
 }

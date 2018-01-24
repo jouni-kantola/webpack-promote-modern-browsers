@@ -12,9 +12,13 @@
     @Html.Partial("_GeneratedViews/fallback-styles.cshtml")
 </head>
 <body>
-    <div class="container body-content">
+    <header class="header" data-component="header"></header>
+
+    <section class="content">
         @RenderBody()
-    </div>
+    </section>
+
+    <footer class="footer" data-component="footer"></footer>
 
     <environment include="Development">
     </environment>
@@ -22,7 +26,5 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
-    @Html.Partial("_GeneratedViews/modern.cshtml")
-    @Html.Partial("_GeneratedViews/fallback.cshtml")
 </body>
 </html>

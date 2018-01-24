@@ -1,5 +1,5 @@
-import {Footer} from "../";
+import { Footer } from "../";
 
-it("has", () => {
-  expect(new Footer("test")).toBeDefined();
+it("has text", () => {
+  expect(new Footer("a-footer").text).toEqual("a-footer");
 });
