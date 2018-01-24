@@ -6,6 +6,9 @@ const tsConfig = JSON.parse(
   stripJsonComments(fs.readFileSync("./tsconfig.json", "utf8"))
 );
 
+tsConfig.compilerOptions.module = "commonjs";
+tsConfig.compilerOptions.target = "es5";
+
 module.exports = {
   process(src, path) {
     if (path.endsWith(".ts") || path.endsWith(".tsx")) {
