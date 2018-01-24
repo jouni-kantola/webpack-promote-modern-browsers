@@ -16,18 +16,23 @@ module.exports = {
   },
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: [".ts", ".tsx"]
+    extensions: [".js", ".ts", ".tsx"]
   },
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: {
-          loader: "ts-loader",
-          options: {
-            configFile: path.resolve(__dirname, "ts-loader.tsconfig.json")
+        use: [
+          {
+            loader: "babel-loader"
+          },
+          {
+            loader: "ts-loader",
+            options: {
+              configFile: path.resolve(__dirname, "ts-loader.tsconfig.json")
+            }
           }
-        }
+        ]
       }
     ]
   },

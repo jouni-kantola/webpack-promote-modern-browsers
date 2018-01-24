@@ -1,6 +1,7 @@
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import pause from "./utils/pause";
+import { leftIn } from "./utils/tree-shaked";
 
 const header = new Header("yes");
 const footer = new Footer("no");
@@ -12,3 +13,4 @@ async function stayAWhileAndListen() {
 }
 
 stayAWhileAndListen();
+console.log(leftIn);
