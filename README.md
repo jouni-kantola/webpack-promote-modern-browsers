@@ -1,5 +1,5 @@
-# webpack with ASP.NET Core
-Example ASP.NET Core web serving assets generated with webpack. The application uses TypeScript and Babel to showcase an example for:
+# webpack promote modern browsers
+Example web application for serving assets generated with webpack, where modern browsers are served an ES2017 bundle and older browsers a transpiled ES5 version. The application uses TypeScript and Babel to showcase an example for:
 - dynamic imports
 - async/await 
 - tree shaking
