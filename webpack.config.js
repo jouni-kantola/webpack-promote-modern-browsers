@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const RazorPartialViewsWebpackPlugin = require("razor-partial-views-webpack-plugin");
-// const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -50,7 +49,7 @@ module.exports = {
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
     new ExtractTextPlugin({
-      filename: "[name].[contentHash].css",
+      filename: "styles.[contentHash].css",
       allChunks: true
     }),
     new RazorPartialViewsWebpackPlugin({
@@ -67,7 +66,7 @@ module.exports = {
         {
           test: /\.css$/,
           output: {
-            name: defaultName => defaultName.split(".")[0] + "-styles",
+            name: "styles",
             path: path.join(__dirname, "Pages/_GeneratedViews")
           }
         }

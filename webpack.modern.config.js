@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const RazorPartialViewsWebpackPlugin = require("razor-partial-views-webpack-plugin");
-// const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -33,12 +32,8 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
           use: {
-            loader: "css-loader",
-            options: {
-              sourceMap: true
-            }
+            loader: "css-loader"
           }
         })
       }
@@ -58,13 +53,6 @@ module.exports = {
             path: path.join(__dirname, "ViewTemplates/modern-script-view-template.tmpl"),
           },
           output: {
-            path: path.join(__dirname, "Pages/_GeneratedViews")
-          }
-        },
-        {
-          test: /\.css$/,
-          output: {
-            name: defaultName => defaultName.split(".")[0] + "-styles",
             path: path.join(__dirname, "Pages/_GeneratedViews")
           }
         }
