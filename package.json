@@ -27,7 +27,8 @@
   "dependencies": {},
   "scripts": {
     "test": "jest",
-    "build": "./node_modules/.bin/webpack"
+    "build": "./node_modules/.bin/webpack",
+    "watch": "npm run build -- --watch"
   },
   "jest": {
     "moduleFileExtensions": [
