@@ -1,0 +1,13 @@
+<script>
+  var __modernScript__;
+  try {
+    eval("typeof Object.getPrototypeOf(async function() {}).constructor === 'function'");
+    console && console.log('Loading script for modern browsers :-)');
+    __modernScript__ = document.createElement('script');
+    __modernScript__.type = 'text/javascript';
+    __modernScript__.src = '##URL##';
+    document.getElementsByTagName('head')[0].appendChild(__modernScript__);
+  } catch (e) {
+    console && console.log('No async function support...');
+  }
+</script>

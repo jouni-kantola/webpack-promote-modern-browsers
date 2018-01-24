@@ -7,7 +7,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
-    fallback: path.join(__dirname, "Assets/app.ts")
+    modern: path.join(__dirname, "Assets/app.ts")
   },
   output: {
     path: path.join(__dirname, "wwwroot/assets"),
@@ -22,9 +22,6 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         use: [
-          {
-            loader: "babel-loader"
-          },
           {
             loader: "ts-loader",
             options: {
@@ -58,7 +55,7 @@ module.exports = {
         {
           test: /.js$/,
           template: {
-            path: path.join(__dirname, "ViewTemplates/fallback-script-view-template.tmpl"),
+            path: path.join(__dirname, "ViewTemplates/modern-script-view-template.tmpl"),
           },
           output: {
             path: path.join(__dirname, "Pages/_GeneratedViews")
