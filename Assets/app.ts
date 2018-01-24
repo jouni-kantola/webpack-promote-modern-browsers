@@ -1,16 +1,8 @@
-import { Header } from "./components/header";
-import { Footer } from "./components/footer";
-import pause from "./utils/pause";
-import { leftIn } from "./utils/tree-shaked";
+import { isModern } from "./utils/feature-detect";
 
-const header = new Header("yes");
-const footer = new Footer("no");
-
-async function stayAWhileAndListen() {
-  console.log("waiting for you...");
-  await pause(2000);
-  console.log("talk already, mister!");
+if(isModern) {
+  import("./modern-app").then(aModule => console.log(aModule));
 }
 
-stayAWhileAndListen();
-console.log(leftIn);
+
+
