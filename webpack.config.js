@@ -6,7 +6,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
-    fallback: path.join(__dirname, "Assets/app.ts")
+    fallback: ["core-js/es6/promise", path.join(__dirname, "Assets/app.ts")]
   },
   output: {
     path: path.join(__dirname, "wwwroot/assets"),
