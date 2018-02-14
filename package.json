@@ -33,8 +33,7 @@
     "build:modern": "./node_modules/.bin/webpack --config webpack.modern.config.js",
     "build:fallback": "./node_modules/.bin/webpack --config webpack.config.js",
     "build": "npm run build:modern && npm run build:fallback",
-    "watch": "npm run build -- --watch",
-    "serve": "npm run build && dotnet run"
+    "watch": "npm run build -- --watch"
   },
   "jest": {
     "moduleFileExtensions": [
