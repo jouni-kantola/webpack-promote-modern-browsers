@@ -5098,12 +5098,6 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-razor-partial-views-webpack-plugin@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/razor-partial-views-webpack-plugin/-/razor-partial-views-webpack-plugin-1.1.0.tgz#a83afbf6ebd88f38ddadd2dbc532fbe6e4ff4fa5"
-  dependencies:
-    templated-assets-webpack-plugin "^1.2.0"
-
 rc@^1.1.7:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.4.tgz#a0f606caae2a3b862bbd0ef85482c0125b315fa3"

@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-const RazorPartialViewsWebpackPlugin = require("razor-partial-views-webpack-plugin");
+const TemplatedAssetsWebpackPlugin = require("templated-assets-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -52,7 +52,7 @@ module.exports = {
       filename: "styles.[contentHash].css",
       allChunks: true
     }),
-    new RazorPartialViewsWebpackPlugin({
+    new TemplatedAssetsWebpackPlugin({
       rules: [
         {
           test: /.js$/,
